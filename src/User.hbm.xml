@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="Entity.User" table="user">
+		<id name="id" column="user_id">
+			<generator class="assigned" />
+		</id>
+		<property name="username" type="java.lang.String" column="username" />
+		<property name="password" type="java.lang.String" column="password" />
+		<property name="gender" type="java.lang.String" column="gender" />
+		<property name="phone" type="java.lang.String" column="phone" />
+		<property name="email" type="java.lang.String" column="email" />
+		<property name="address" type="java.lang.String" column="address" />
+	</class>
+</hibernate-mapping>

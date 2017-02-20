@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="Entity.Book" table="book">
+		<id name="item_id" column="item_id">
+			<generator class="assigned" />
+		</id>
+		<property name="bookname" type="java.lang.String" column="bookname" />
+		<property name="price" type="int" column="price" />
+	</class>
+</hibernate-mapping>

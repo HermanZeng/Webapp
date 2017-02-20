@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="Entity.Bookdetail" table="book_detail">
+		<id name="item_id" column="item_id">
+			<generator class="assigned" />
+		</id>
+		<property name="bookname" type="java.lang.String" column="bookname" />
+		<property name="price" type="int" column="price" />
+		<property name="category" type="java.lang.String" column="category" />
+		<property name="detail" type="java.lang.String" column="detail" />
+	</class>
+</hibernate-mapping>
